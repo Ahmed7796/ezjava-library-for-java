@@ -1,22 +1,29 @@
 package easy.java.core;
 
-import java.util.Scanner;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
 /**
  *
  * @author lesha
  */
 public class Input {
-    // Static scanner for all input methods:
-    private static final Scanner scanner = new Scanner(System.in);
+    // Static BufferedReader for all input methods:
+    private static final BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         
-
 
 
     // STRINGS AND CHARACTERS:
     // Reading string easily with Input.readString("Your_Prompt_Here:");
     public static String readString(String prompt){
         System.out.print(prompt);
-        return scanner.nextLine();
+        try{
+            return reader.readLine();
+        }
+        catch(IOException e){
+            return ("Error reading input.");
+        }
     }
         
     // Reading a single character (char):
@@ -24,14 +31,19 @@ public class Input {
       char value = ' ';   
       boolean isValid = false;
       do{
+          try{
           System.out.print(prompt);
-          String input = scanner.nextLine();
+          String input = reader.readLine();
           if (input.length() == 1){
           value = input.charAt(0);
           isValid = true;
           } else {
               System.out.println("Please enter exactly one character.");
           }
+          }catch(IOException e){
+      
+          System.out.println("Error reading input");
+      }
         }   while(!isValid);
 
       return value;
@@ -42,9 +54,10 @@ public class Input {
     int value = 0;
     boolean isValid = false;
     do{
-            System.out.print(prompt);
+            
         try{
-            value = Integer.parseInt(scanner.nextLine());
+            String input = readString(prompt);
+            value = Integer.parseInt(input);
             isValid = true;
         
         }catch(NumberFormatException e){
@@ -62,8 +75,9 @@ public class Input {
     boolean isValid = false;
         do{
             try{    
-                System.out.print(prompt);
-                value = Float.parseFloat(scanner.nextLine());
+                
+                String input = readString(prompt);
+                value = Float.parseFloat(input);
                 isValid = true;
             } 
             catch(NumberFormatException e){
@@ -73,10 +87,7 @@ public class Input {
         
         } while (!isValid);
         return value;
-    }
-    
-    // Reading an uncapped integer with a minimal limit:
-    
+    }  
     
 
     
@@ -84,9 +95,10 @@ public class Input {
      public static double readDouble(String prompt){
     double value = 0.0;
     boolean isValid = false;
-    do{ System.out.print(prompt);
+    do{ 
         try{
-            value = Double.parseDouble(scanner.nextLine());
+            String input = readString(prompt);
+            value = Double.parseDouble(input);
             isValid = true;
         }catch(NumberFormatException e){
             System.out.println("Please enter a floating decimal (double) number.");
@@ -103,9 +115,10 @@ public class Input {
        short value = 0;
        boolean isValid = false;
       do {  
-            System.out.print(prompt);
+            
             try{
-                value = Short.parseShort(scanner.nextLine());
+                String input = readString(prompt);
+                value = Short.parseShort(input);
                 isValid = true;
             } catch(NumberFormatException e){
                 System.out.println("Please enter a short integer. (Between -32,768 and 32,767)");
@@ -122,9 +135,10 @@ public class Input {
      boolean isValid = false;
      
      do{
-         System.out.print(prompt);
+         
          try{   
-                value = Long.parseLong(scanner.nextLine());
+                String input = readString(prompt);
+                value = Long.parseLong(input);
                 isValid = true;
                         }catch(NumberFormatException e){
              System.out.println("Please enter an integer.");
@@ -140,9 +154,10 @@ public class Input {
          boolean isValid = false;
          
          do{
-             System.out.print(prompt);
+             
              try{
-                 value = Byte.parseByte(scanner.nextLine());
+                 String input = readString(prompt);
+                 value = Byte.parseByte(input);
                  isValid = true;
              } catch (NumberFormatException e){
              
@@ -161,18 +176,16 @@ public class Input {
      
         do {
             // This can be customized.
-            System.out.print(prompt);
-            String input = scanner.nextLine().trim().toLowerCase();
-            
+            String input = readString(prompt).trim().toLowerCase();
             if (input.equals("true") || input.equals("y") || input.equals("yes") ){
-               value = true;
-               isValid = true;
+                value = true;
+                isValid = true;
             } else if (input.equals("false") || input.equals("n") || input.equals("no"))
             {
                 value = false;
                 isValid = true;
             } else {
-                    System.out.println("Please enter a valid input (Y/N), (true/false), (yes/no).");
+                System.out.println("Please enter a valid input (Y/N), (true/false), (yes/no).");
             }
         } while (!isValid);
 

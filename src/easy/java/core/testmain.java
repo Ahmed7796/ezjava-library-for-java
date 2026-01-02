@@ -7,19 +7,17 @@ public class testmain {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        // Ranged float - PASSED
-        float rangedFloat = Input.readFloat("Enter a value between 0.5 - 10.5: ",0.5f,10.5f);
-        System.out.println("You entered: "+ rangedFloat);
-        
-        double rangedDouble = Input.readDouble("Enter a value between 0.50 - 20.50: ",0.5,20.5);
-        System.out.println("You entered: "+rangedDouble);
-        
-        String rangedString = Input.readString("Enter your name (1-10) characters: ", 1, 10);
-        System.out.println("You entered: "+rangedString);
-		
-		int rangedInt = Input.readInt("Enter an integer from 1 to 10",1,10);
-		System.out.println("Your integer is: "+rangedInt);
-        }
-    
+        String test = Input.readString("Test 1 (String): ");
+        System.out.println(test);
+        char Test2 = Input.readChar("Test 2 (char): ");
+        System.out.println(Test2);
+        int Test3 = Input.readInt("Test 3 (integer): ");
+        System.out.println(Test3*2);
+        float Test4 = Input.readFloat("Test 4 (float): ");
+        System.out.println(Test4*Test4);
+        double Test5 = Input.readDouble("Test 5 (double): ");
+        System.out.println(Test5*Test5);
+        short Test6 = Input.readShort("Test 6 (short): ");
+        System.out.println(Test6*2);
+    }
 }
