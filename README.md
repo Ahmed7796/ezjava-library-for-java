@@ -15,3 +15,15 @@ You can use y/n, yes/no, AND true/false as boolean inputs. Java by default accep
 
 ### Sample
 <img width="3680" height="1180" alt="Input java (5)" src="https://github.com/user-attachments/assets/30416929-df9e-4f4c-a635-3d94fdf7eece" />
+
+
+## Feature: Colored Output & Typewriter Method (Works on Terminal-based IDEs or actual Terminals):
+You can easily generate colored output (as of writing this: Red, Yellow, Green, Blue) and use the built in typewriter method, which takes two arguments:
+
+1. String
+2. Speed (Milliseconds)
+
+### Sample:
+<img width="3200" height="1608" alt="Main java (2)" src="https://github.com/user-attachments/assets/b387e3ed-c724-497b-b6b8-cbe991b0f3e5" />
+
+
