@@ -1,3 +1,5 @@
+package easy.java.core;
+
 import easy.java.core.*;
 
 public class testmain {
