@@ -3,11 +3,7 @@ package easy.java.core;
 import easy.java.core.*;
 
 public class testmain {
-
-
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         String test = Input.readString("Test 1 (String): ");
         System.out.println(test);
