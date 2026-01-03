@@ -24,6 +24,6 @@ You can easily generate colored output (as of writing this: Red, Yellow, Green, 
 2. Speed (Milliseconds)
 
 ### Sample:
-<img width="3200" height="1608" alt="Main java (2)" src="https://github.com/user-attachments/assets/b387e3ed-c724-497b-b6b8-cbe991b0f3e5" />
+<img width="3200" height="1992" alt="Main java (3)" src="https://github.com/user-attachments/assets/50e43dd2-e0d0-4ee8-9280-9dfadfb2bf4b" />
 
 
