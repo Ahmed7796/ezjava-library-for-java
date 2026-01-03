@@ -1,5 +1,7 @@
 package easy.java.core;
 
+import easy.java.core.*;
+
 public class testmain {
     
     public static void main(String[] args) {
@@ -15,9 +17,11 @@ public class testmain {
         System.out.println(Test5*Test5);
         short Test6 = Input.readShort("Test 6 (short): ");
         System.out.println(Test6*2);
-        byte Test7 = Input.readByte("Test 7 (byte): ");
-        System.out.println(Test7*Test7);
-        long Test8 = Input.readLong("Test 8 (Long): ");
-        System.out.println(Test8*2);
+            
+          Output.green("Hello World!");
+          
+           Output.typewriter("This is a typewriter method, it may behave differently depending on your IDE.", 100);
+
+        
     }
 }
