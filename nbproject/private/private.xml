@@ -3,8 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/lesha/Documents/NetBeansProjects/ezjava/src/easy/java/core/testmain.java</file>
-            <file>file:/C:/Users/lesha/Documents/NetBeansProjects/ezjava/src/easy/java/core/Input.java</file>
+            <file>file:/C:/Users/lesha/Documents/NetBeansProjects/ezjava-library-for-java/src/easy/java/core/Input.java</file>
+<<<<<<< HEAD
+            <file>file:/C:/Users/lesha/Documents/NetBeansProjects/ezjava-library-for-java/src/easy/java/core/Output.java</file>
+            <file>file:/C:/Users/lesha/Documents/NetBeansProjects/ezjava-library-for-java/src/easy/java/core/testmain.java</file>
+=======
+>>>>>>> e5ec828f62f4d3da4a198c16892c6abf685ac2c5
         </group>
     </open-files>
 </project-private>
