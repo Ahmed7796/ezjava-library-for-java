@@ -1,6 +1,5 @@
 package easy.java.core;
 
-import easy.java.core.*;
 
 public class testmain {
     
@@ -20,8 +19,9 @@ public class testmain {
             
           Output.green("Hello World!");
           
-          Output.typewriter("This is a typewriter method, it may behave differently depending on your IDE.", 100);
-
+          Output.yellow("Loading Resources...");
+          Output.autoLoadingBar(15);
+          Output.green("Resources loaded successfully!");
         
     }
 }

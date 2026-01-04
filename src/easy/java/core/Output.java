@@ -24,7 +24,7 @@ public class Output {
     }
     
     
-    // Special Effect Output:
+    // Typewriter method: (Requires a TRUE terminal e.g. VSCode, CMD, ZSH).
     
     public static void typewriter(String message, int speed){
     
@@ -40,4 +40,42 @@ public class Output {
         }
             System.out.println();
     }
+                public static void loadingBar(int percent){
+                    int barLength = 30;
+                    int progress = (percent * barLength) / 100;
+                    
+                    StringBuilder bar = new StringBuilder("\r[");
+                    for (int i = 0; i < barLength; i++){
+                        if (i < progress) bar.append("=");
+                        else if (i == progress ) bar.append(">");
+                        else bar.append(" ");
+                    }
+                    bar.append("] ").append(percent).append("%");
+                    System.out.print(bar.toString());
+                    System.out.flush();
+                    
+                    if (percent >= 100) System.out.println();
+                }
+    
+    
+            // Clearing console method:
+            public static void clear() {
+            System.out.print("\033[H\033[2J");
+            System.out.flush();
+        }
+            
+        public static void autoLoadingBar(int seconds) {
+        int totalSteps = 100;
+        int delay = (seconds * 1000) / totalSteps;
+
+        for (int i = 0; i <= totalSteps; i++) {
+            loadingBar(i);
+            try {
+                Thread.sleep(delay);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }
+    }    
+    
 }
