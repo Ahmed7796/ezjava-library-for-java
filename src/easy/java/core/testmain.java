@@ -24,7 +24,7 @@ public class testmain {
             
           Output.green("Hello World!");
           
-           Output.typewriter("This is a typewriter method, it may behave differently depending on your IDE.", 100);
+          Output.typewriter("This is a typewriter method, it may behave differently depending on your IDE.", 100);
 
         
     }
