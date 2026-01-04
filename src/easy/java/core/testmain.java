@@ -18,7 +18,7 @@ public class testmain {
         System.out.println(Test6*2);
             
           Output.green("Hello World!");
-          
+          //Testing loading bar:
           Output.yellow("Loading Resources...");
           Output.autoLoadingBar(15);
           Output.green("Resources loaded successfully!");

@@ -39,7 +39,7 @@ public class Output {
             }
         }
             System.out.println();
-    }
+    }   // Loading bar (Terminal required):
                 public static void loadingBar(int percent){
                     int barLength = 30;
                     int progress = (percent * barLength) / 100;
@@ -63,7 +63,7 @@ public class Output {
             System.out.print("\033[H\033[2J");
             System.out.flush();
         }
-            
+            // Auto loading bar
         public static void autoLoadingBar(int seconds) {
         int totalSteps = 100;
         int delay = (seconds * 1000) / totalSteps;
