@@ -1,6 +1,5 @@
 package easy.java.core;
 
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
@@ -11,8 +10,6 @@ import java.io.IOException;
 public class Input {
     // Static BufferedReader for all input methods:
     private static final BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        
-
 
     // STRINGS AND CHARACTERS:
     // Reading string easily with Input.readString("Your_Prompt_Here:");
@@ -141,7 +138,7 @@ public class Input {
                 value = Long.parseLong(input);
                 isValid = true;
                         }catch(NumberFormatException e){
-             System.out.println("Please enter an integer.");
+             System.out.println("Please enter a valid long integer. ");
          }
      } while(!isValid);
      
