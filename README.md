@@ -26,4 +26,9 @@ You can easily generate colored output (as of writing this: Red, Yellow, Green, 
 ### Sample:
 <img width="3200" height="1992" alt="Main java (3)" src="https://github.com/user-attachments/assets/50e43dd2-e0d0-4ee8-9280-9dfadfb2bf4b" />
 
+## Feature: Loading Bar, Auto Loading Bar Methods (Works on Terminal-based IDEs or actual Terminals (CMD, BASH, ZSH, VSCode, etc.))
+
+### Sample:
+<img width="3200" height="2440" alt="Main java (4)" src="https://github.com/user-attachments/assets/9d3ab8e8-e84f-4483-a674-d20f31a77e4d" />
+
 
