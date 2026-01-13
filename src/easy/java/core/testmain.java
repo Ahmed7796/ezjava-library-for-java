@@ -44,8 +44,10 @@ public class testmain {
           Time.stopBenchmark(); //Ending the benchmark process.
           
           Time.waitForKey("Press [Enter] to start the live timer:  ");
-          
-          double numbers[] = {1, 1, 1, 1, 1, 1, 1};
+         
+
+          double numbers[] = {24, 23, 34, 23, 23, 1, 0};
+
           
           double average = EZMath.getAverage(numbers);
           
