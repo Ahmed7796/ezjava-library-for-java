@@ -1,7 +1,5 @@
 package easy.java.core;
 
-import java.util.List;
-
 
 public class testmain {
     
@@ -48,10 +46,27 @@ public class testmain {
 
           double numbers[] = {24, 23, 34, 23, 23, 1, 0};
 
-          
+          // Testing the EZMath Methods:
           double average = EZMath.getAverage(numbers);
+          double mode = EZMath.getMode(numbers);
+          double median = EZMath.getMedian(numbers);
+          double variance = EZMath.getVariance(numbers);
+          double CV = EZMath.getCoefficientOfVariation(numbers);
+          double stdDev = EZMath.getStandardDeviation(numbers);
+          double meanDev = EZMath.getMeanDeviation(numbers);
+          double range = EZMath.getRange(numbers);
           
-          System.out.println(average);
+          System.out.println("-------------------------------------------");
+          System.out.println("Summary of The Array:");
+          System.out.println("-------------------------------------------");
+          System.out.println("Mean: " +EZMath.round(average, 2));
+          System.out.println("Mode: "+EZMath.round(mode, 2));
+          System.out.println("Median: "+EZMath.round(median, 2));
+          System.out.println("Variance: "+EZMath.round(variance, 2));
+          System.out.println("Standard Deviaton: "+EZMath.round(stdDev, 2));
+          System.out.println("Mean Deviation: "+EZMath.round(meanDev, 2));
+          System.out.println("Co-efficient of Variance: " + EZMath.round(CV, 2));
+          System.out.println("Range: " + EZMath.round(range, 2));
 
     }
 }
