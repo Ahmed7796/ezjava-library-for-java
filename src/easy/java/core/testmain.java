@@ -45,7 +45,7 @@ public class testmain {
           
           Time.waitForKey("Press [Enter] to start the live timer:  ");
           
-          double numbers[] = {24, 23, 34, 23, 23, 1, 0};
+          double numbers[] = {1, 1, 1, 1, 1, 1, 1};
           
           double average = EZMath.getAverage(numbers);
           
