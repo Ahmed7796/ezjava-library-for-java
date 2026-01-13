@@ -44,11 +44,12 @@ public class testmain {
           Time.stopBenchmark(); //Ending the benchmark process.
           
           Time.waitForKey("Press [Enter] to start the live timer:  ");
-          System.out.println("Current Date (yyyy-MM-dd):  "+day);
-          while(true){
-              System.out.println("Current time: "+ Time.getTimestamp());
-              Time.pause(1);
-          }
+          
+          double numbers[] = {24, 23, 34, 23, 23, 1, 0};
+          
+          double average = EZMath.getAverage(numbers);
+          
+          System.out.println(average);
 
     }
 }
