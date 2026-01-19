@@ -51,7 +51,7 @@ public class testmain {
           double mode = EZMath.getMode(numbers);
           double median = EZMath.getMedian(numbers);
           double variance = EZMath.getVariance(numbers);
-          double CV = EZMath.getCoefficientOfVariation(numbers);
+          double CV = EZMath.getCoefficientOfVariance(numbers);
           double stdDev = EZMath.getStandardDeviation(numbers);
           double meanDev = EZMath.getMeanDeviation(numbers);
           double range = EZMath.getRange(numbers);
