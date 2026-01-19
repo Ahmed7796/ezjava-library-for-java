@@ -159,7 +159,7 @@ public class EZMath {
     }
     
     // Get the co-efficient of Variation (CV):
-    public static double getCoefficientOfVariation(double[] numbers){
+    public static double getCoefficientOfVariance(double[] numbers){
         // Get the mean (Average):
         double mean = getAverage(numbers);
         // Get the standard deviation:
