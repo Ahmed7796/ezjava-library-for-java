@@ -51,8 +51,7 @@ public class Input {
     int value = 0;
     boolean isValid = false;
     do{
-            
-        try{
+          try{
             String input = readString(prompt);
             value = Integer.parseInt(input);
             isValid = true;
