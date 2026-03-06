@@ -1,3 +1,4 @@
 /build/
 /dist/
-/src/easy/java/core/testmain.*
+/src/easy/java/core/testmain.java
+/src/easy/java/core/testmain.class
